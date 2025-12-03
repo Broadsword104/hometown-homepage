@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <!-- HERO SECTION -->
+        <!-- Used figma as the design tool to work out the specifics for the design of the page as layed out by course tutor -->
+        <!-- Stretch Goals:
+            I chose NOT to add a new font - as I didn't find one I liked better(!)
+            I chose NOT to use a different colour palette for the same reason(!)
+            nor did I add a new Section - mainly as it took me a while to get it looking right as it is...
+            nor did I find a good way to utilise the :hover functionality.
+            I DID, however, make it about my Hometown - or at least where I currently live and added my own 'Strech goal' by creating and added my own <a href="Linky-things">to relevant Wikipedia pages</a> with target="_blank" but did not opt to also include the recommended Assisted reading 'link (opens in new tab)':  
+            example: <a target="_blank" href="https://www.wikipedia.org">
+                    Wikipedia (opens in new tab)
+                 </a>
+            example ends
+        Stretch Goals ends -->
+        
+        <div id="hero">
+            <h1 id="hero-text">Visit Bingley</h1>
+            <h2 id="hero-text2">Enjoy exploring this <a href="https://en.wikipedia.org/wiki/Bingley" target="_blank">English market town</a> nestled in West Yorkshire's Aire Valley.</h2>
+        </div>
+        
+        <!-- ACTIVITIES SECTION -->
+        <div id="activities">
+            <!-- split each of these into their own <div> and added class="nav-wrapper" -->
+            <!-- need to sort spacing -->
+            <h3 class="activity-header">Top three activities to do in Bingley</h3>
+            <div class="nav-wrapper">
+                <div class="activity-1"><img id="activity-img" src="images/Bingley-artscentre1.jpg">
+                    <h4><a href="https://www.bingleyartscentre.co.uk/whats-on" target="_blank">Bingley Arts Centre</a></h4>
+                    <p class="activity-blurb">and the Bingley Little Theatre (or BLT 😉)</p>
+                </div>
+                <div class="activity-2"><img id="activity-img" src="images/Elsie-Pup_7361.jpg"> 
+                    <h4><a href="https://en.wikipedia.org/wiki/Airedale_Terrier" target="_blank">Bingley Terrier</a></h4>
+                    <p class="activity-blurb">Home of the Airedale Terrier</p>
+                </div>
+                <div class="activity-3"><img id="activity-img" src="images/Bingley-canal1.jpg">
+                    <h4><a href="https://en.wikipedia.org/wiki/Leeds_and_Liverpool_Canal" target="_blank">Leeds - Liverpool canal</a></h4>
+                    <p class="activity-blurb">Explore the Three- and Five-Rise Locks</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GUIDE SECTION -->
+        <div id="guide">
+            <!-- moved <img> from last to first before applying display: flex; in CSS-->
+            <img class="avatar" src="images/IMG_3934-1.jpg" alt="image of author with his dog, an Airedale Terrier">
+            <div>
+                <h3 class="guide-header">Your guide</h3>
+                <p class="guide-text">"I have lived in Bingley for over 17 years, so I can show you all of its best parts and hidden secrets."</p>
+            <h4>B Roads Word, and Mutt</h4>
+            </div>
+        </div>
+    </body>
+</html>

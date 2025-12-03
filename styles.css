@@ -1,0 +1,161 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+#hometown homepage
+    width: 720;
+    height: 1115;
+    angle: 0 deg; deleted these values for other imports
+    opacity: 1;
+font-family: Arial;
+font-weight: 700;
+font-size: 18.72px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+
+
+**/
+
+body {
+    margin: 0;
+    text-align: center;
+    width: 720px;
+    color: #1D3557;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/** looks like <h4> font-size is 16px; and bold made no obviuos difference. color: #1D3557 set in <body> as all text is a dark blue **/
+/** h4 {
+    font-weight: bold;
+    font-style: italic;
+} **/
+
+#hero {
+    display: flex;
+    flex-direction: column; 
+    /** display: block; **/
+    align-items: center;
+    height: 343px;
+    background-image: url("images/Bingley-weir1-big.jpg");
+    /** when background-image: attribute applied to original torsov.jpg <img> with both width value 720px; and height value 343px; the <img> was fitted to size, where as using 'cover' (or just width and not height, the <img> is slightly truncated as per example we are following. Using 'contain' worked for the height, but not the width, as the img was repeated. Ended up fixing the img externally and re-importing! **/
+    background-size: cover; 
+    color: #FFFFFF;
+    /** margin-bottom: 0px; **/
+}
+
+#hero-text {
+    background: #1D3557;
+    width: 225;
+    height: 42;
+    top: 119px;
+    left: 247px;
+    border-radius: 10px;
+    margin: 119px 247px 0 247px;
+    padding: 3px 12px 5px 12px;
+    font-size: 32px;
+    text-align: center;
+}
+
+#hero-text2 {
+    background: #457B9D;
+    width: 400px;
+    height: 52px;
+    top: 172px;
+    left: 154px;
+    border-radius: 10px;
+    margin: 11px 154px 119px 154px; 
+    padding: 5px 10px;
+    /** padding: 5px 28px 8px 28px; **/
+    font-size: 19px; 
+}
+
+#activities {
+    height: 378px;
+    top: 343px; 
+    background-color: #F1FAEE;
+    /** before adding a border, the background-color: had a gap that I could not close with margin! Initally applied color value as #457B9D and then swapped to same as background-color: #F1FAEE **/
+    border: 1px solid #F1FAEE;
+}
+
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#activity-img {    
+    width: 100px;
+    border-radius: 50%;
+    /** border: 6px solid #BC6C25; **/
+    margin-bottom: 10px;
+}
+
+.activity-header {
+    margin: 39px auto 54px;
+}
+
+.activity-blurb {
+    width: 198px;
+}
+
+#guide {
+    width: auto;
+    height: 294px;
+    display: flex;
+    justify-content: center;
+    margin: 50px 160px;
+    background-color: #A8DADC;
+    border-radius: 10px; 
+    box-shadow: 0px 6px 0px 0px #1D3557; 
+    /** width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #FEFAE0; **/
+}
+
+.avatar {
+    /** width: 180px;
+    height: 250px; 
+    padding: 23px 13px;
+    border-radius: 10px; **/
+    width: 180px;
+    height: 248px;
+    margin: 23px 0px 23px 13px;
+    /** top: 73px;
+    left: 173px;
+    angle: 0 deg;
+    opacity: 1; **/
+    border-radius: 10px;
+}
+
+.guide-header {
+    width: 207;
+    height: 32;
+    margin-top: 49px;
+    /** top: 99px;
+    left: 349px; **/
+}
+
+.guide-text {
+    font-style: italic;
+    margin-right: 11px;
+    margin-left: 7px;
+    /** padding-right: 11px; **/
+}
+/** changed from 
+img {
+    width: 100px;
+} **/
